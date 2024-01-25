@@ -230,9 +230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 1
-  hp: 5
+  hp: 1
   IsAttack: 0
   onHit: 0
   onDeath: 0
   damage: 1
-  playerpos: {fileID: 196885539292261193}
+  playerpos: {fileID: 0}

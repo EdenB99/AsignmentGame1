@@ -67,11 +67,12 @@ public class EnemyBase : RecycleObject
     private void Ondie() //사망 애니메이션 재생
     {
         onDeath = true;
-        Enemyani.SetBool("OnDeath", true);
+        Enemyani.SetTrigger("OnDeath");
     }
     
     private void EndDeadAni() // 사망 애니메이션 종료 후
     {
+        Debug.Log("사망");
         gameObject.SetActive(false); //비활성화
         transform.position = new Vector3(10, 6, 0); //화면 밖으로 전환
     }
